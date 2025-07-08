@@ -1,10 +1,11 @@
 package foundation;
 
-public class reverse {
+public class Palindrone {
 
 	public static void main(String[] args) {
-		String s="Full Stack Development";
-		String r="";
+		
+		String s= "RACECAR";
+		String r= "";
 		char ch;
 		
 		for(int i=0;i<s.length();i++)
@@ -12,9 +13,8 @@ public class reverse {
 			ch=s.charAt(i);
 			r=ch+r;
 		}
-		
-		System.out.print(r);
-		
+		boolean result=s.equals(r);
+		System.out.print(result);
 	}
 
 }
